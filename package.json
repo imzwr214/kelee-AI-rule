@@ -1,0 +1,11 @@
+{
+  "name": "kelee-ai-rule",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "convert": "node scripts/convert.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
