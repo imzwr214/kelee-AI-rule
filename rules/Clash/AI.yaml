@@ -1,13 +1,13 @@
 # NAME: AI
 # SOURCE: https://kelee.one/Tool/Loon/Lsr/AI.lsr
-# UPDATED: 2026-06-20T12:58:23.859Z
+# UPDATED: 2026-06-20T13:02:11.240Z
 # FORMAT: Clash classical rule-provider
 # RULES: 95
 # UNSUPPORTED: 0
 
 payload:
-  - "AND,((DOMAIN-KEYWORD, chatgpt-async-webps-prod-), (DOMAIN-SUFFIX, webpubsub.azure.com))"
-  - "AND,((DOMAIN-KEYWORD, openaicom-api-), (DOMAIN-SUFFIX, azurefd.net))"
+  - "AND,((DOMAIN-KEYWORD,chatgpt-async-webps-prod-),(DOMAIN-SUFFIX,webpubsub.azure.com))"
+  - "AND,((DOMAIN-KEYWORD,openaicom-api-),(DOMAIN-SUFFIX,azurefd.net))"
   - "DOMAIN,chatgpt.livekit.cloud"
   - "DOMAIN,host.livekit.cloud"
   - "DOMAIN,openai.com.cdn.cloudflare.net"
@@ -56,7 +56,7 @@ payload:
   - "DOMAIN-SUFFIX,antigravity-unleash.goog"
   - "DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com"
   - "DOMAIN,daily-cloudcode-pa.googleapis.com"
-  - "AND,((DOMAIN-KEYWORD, antigravity-auto-updater-), (DOMAIN-SUFFIX, run.app))"
+  - "AND,((DOMAIN-KEYWORD,antigravity-auto-updater-),(DOMAIN-SUFFIX,run.app))"
   - "DOMAIN-SUFFIX,anthropic.com"
   - "DOMAIN-SUFFIX,claude.ai"
   - "DOMAIN-SUFFIX,claudeusercontent.com"

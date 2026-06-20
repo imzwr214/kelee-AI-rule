@@ -7,6 +7,7 @@ const USER_AGENT = "Surge iOS/2980";
 
 const SUPPORTED_RULE_RE =
   /^(AND|OR|NOT|DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|DOMAIN-REGEX|IP-CIDR|IP-CIDR6|IP-ASN|GEOIP|GEOSITE|PROCESS-NAME),/i;
+const LOGICAL_RULE_RE = /^(AND|OR|NOT),/i;
 
 async function fetchText(url) {
   const response = await fetch(url, {
@@ -39,11 +40,22 @@ function normalizeRules(text) {
       continue;
     }
 
-    line = line.replace(/^([A-Z0-9-]+),\s+/, "$1,");
+    line = normalizeRule(line);
     rules.push(line);
   }
 
   return { rules, unsupported };
+}
+
+function normalizeRule(line) {
+  if (LOGICAL_RULE_RE.test(line)) {
+    return line
+      .replace(/^([A-Z0-9-]+),\s+/, "$1,")
+      .replace(/,\s+/g, ",")
+      .replace(/\)\s*,\s*\(/g, "),(");
+  }
+
+  return line.replace(/^([A-Z0-9-]+),\s+/, "$1,");
 }
 
 function buildClashYaml(source, rules, unsupportedCount) {
