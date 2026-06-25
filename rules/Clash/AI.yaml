@@ -1,8 +1,8 @@
 # NAME: AI
 # SOURCE: https://kelee.one/Tool/Loon/Lsr/AI.lsr
-# UPDATED: 2026-06-24T21:17:34.583Z
+# UPDATED: 2026-06-25T21:23:19.612Z
 # FORMAT: Clash classical rule-provider
-# RULES: 95
+# RULES: 96
 # UNSUPPORTED: 0
 
 payload:
@@ -101,3 +101,4 @@ payload:
   - "DOMAIN-SUFFIX,z.ai"
   - "DOMAIN,token-plan-sgp.xiaomimimo.com"
   - "DOMAIN,token-plan-ams.xiaomimimo.com"
+  - "DOMAIN-SUFFIX,agnes-ai.com"
