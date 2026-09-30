@@ -1,8 +1,8 @@
 # NAME: AI
 # SOURCE: https://kelee.one/Tool/Loon/Lsr/AI.lsr
-# UPDATED: 2026-09-29T23:17:12.967Z
+# UPDATED: 2026-09-30T23:20:27.692Z
 # FORMAT: Clash classical rule-provider
-# RULES: 243
+# RULES: 244
 # UNSUPPORTED: 0
 
 payload:
@@ -28,6 +28,7 @@ payload:
   - "DOMAIN,copilot-proxy.githubusercontent.com"
   - "DOMAIN,copilot.microsoft.com"
   - "DOMAIN,sydney.bing.com"
+  - "DOMAIN,titles.prod.mos.microsoft.com"
   - "DOMAIN,api.githubcopilot.com"
   - "DOMAIN,models.inference.ai.azure.com"
   - "DOMAIN,ai.google.dev"
