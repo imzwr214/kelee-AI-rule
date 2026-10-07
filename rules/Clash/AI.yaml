@@ -1,8 +1,8 @@
 # NAME: AI
 # SOURCE: https://kelee.one/Tool/Loon/Lsr/AI.lsr
-# UPDATED: 2026-10-06T23:27:39.307Z
+# UPDATED: 2026-10-07T23:56:33.431Z
 # FORMAT: Clash classical rule-provider
-# RULES: 244
+# RULES: 245
 # UNSUPPORTED: 0
 
 payload:
@@ -62,6 +62,7 @@ payload:
   - "AND,((DOMAIN-KEYWORD,antigravity-auto-updater-),(DOMAIN-SUFFIX,run.app))"
   - "DOMAIN-SUFFIX,anthropic.com"
   - "DOMAIN-SUFFIX,claude.ai"
+  - "DOMAIN-SUFFIX,claude.com"
   - "DOMAIN-SUFFIX,claudeusercontent.com"
   - "IP-CIDR,160.79.104.0/23, no-resolve"
   - "IP-CIDR6,2607:6bc0::/48, no-resolve"
